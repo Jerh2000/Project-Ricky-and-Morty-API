@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Rick And Morty Characters</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='./css/styles.css'>
-    <link rel='stylesheet' type='text/css' href='./node_modules/bootstrap/dist/css/bootstrap.min.css'>
-    
-    
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="img">
-            
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logorick.png" alt="" width="100" height="30" />
+          By Jairo Rojas
+        </a>
+        <div class="collapse navbar-collapse m-0 p-0" id="navbarNav">
+          <div class="social-networks ms-auto">
+            <a href="https://www.facebook.com/jerh.23"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/jairo-eliecer-rojas-herrera-625b17191"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Jerh2000"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.instagram.com/imjerh"><i class="fab fa-instagram-square"></i></a>
+          </div>
         </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-cover">
+      <div class="container-details">
+        <div class="details">
+          <h1>Rick And Morty: Characters</h1>
+          <p>
+            Is an American adult animated science fiction sitcom created by
+            Justin Roiland and Dan Harmon for Cartoon Network's nighttime Adult
+            Swim programming block. The series follows the misadventures of
+            cynical mad scientist Rick Sanchez and his good-hearted but fretful
+            grandson Morty Smith, who split their time between domestic life and
+            interdimensional adventures. <br /><br />
+            Roiland voices the eponymous characters, with Chris Parnell, Spencer
+            Grammer and Sarah Chalke voicing the rest of Rick and Morty's
+            family. The series originated from an animated short parody film of
+            Back to the Future, created by Roiland for Channel 101, a short film
+            festival co-founded by Harmon. The series has been acclaimed by
+            critics for its originality, creativity and humor.
+          </p>
+          <a href="https://github.com/Jerh2000/Project-Ricky-and-Morty-API" class="btn-repository">Visit repository</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="cards-container" id="cards"></div>
     </div>
 
-
-
-
-    <script src='./node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
-    <script src='./node_modules/bootstrap/dist/js/'></script>
-    <script src='./js/index.js'></script>
-</body>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/"></script>
+    <script src="./js/utils/fetchData.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
